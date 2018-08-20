@@ -5,11 +5,13 @@ using namespace std;
 
 int main()
 {
-    int tala;
+    int tala = 0;
+    bool user_wrote_42 = false;
 
-    cin >> tala;
+    while ( tala != -1 ) {
 
-    cout << tala << endl << endl;
+
+    }
 
     return 0;
 }
