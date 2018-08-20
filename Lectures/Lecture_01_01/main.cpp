@@ -5,8 +5,9 @@ using namespace std;
 
 int main()
 {
-    double einhvertala = 2.3;
+    double einhvertala = 0.0, onnurtala = 0.0;
 
+    cin >> einhvertala >> onnurtala;
 
     cout.precision(20);
     cout << einhvertala << endl;
