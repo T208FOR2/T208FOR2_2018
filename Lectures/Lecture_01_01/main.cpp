@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    int x;
+    int hello_123 = 0;
+    int 123hello = 0;
 
-    cout << x << endl;
 
     return 0;
 }
