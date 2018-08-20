@@ -10,7 +10,7 @@ int main()
     cout << "Skrifaðu tölu: ";
     cin >> tala;
 
-    cout << "Talan i öðru veldi er: " << tala+tala << endl;
+    cout << "Talan i öðru veldi er: " << tala*tala << endl;
 
     return 0;
 }
