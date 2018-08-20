@@ -17,7 +17,12 @@ int main()
         }
     }
 
-
+    if ( user_wrote_42 ) {
+        cout << "You wrote 42!!!" << endl;
+    }
+    else {
+        cout << "You forgot to write 42..." << endl;
+    }
 
     return 0;
 }
