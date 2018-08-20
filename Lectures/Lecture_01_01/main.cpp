@@ -5,9 +5,8 @@ using namespace std;
 
 int main()
 {
-    int hello_123 = 0;
-    int _123hello = 0;
 
+    cout << "Hello. \"This\" is the second line" << endl;
 
     return 0;
 }
