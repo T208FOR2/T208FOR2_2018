@@ -5,12 +5,11 @@ using namespace std;
 
 int main()
 {
-    double pi = 3.14159259;
+    double einhvertala = 2.3;
 
-    cout << "Hello. \"This\" is the second line" << endl;
 
     cout.precision(20);
-    cout << pi << endl;
+    cout << einhvertala << endl;
 
     return 0;
 }
