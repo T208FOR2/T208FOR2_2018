@@ -11,7 +11,8 @@ int main()
     cin >> tala;
     cin >> texti;
 
-    cout << tala < texti;
+    cout << 1.0 / tala << endl;
+    cout << texti;
 
     return 0;
 }
