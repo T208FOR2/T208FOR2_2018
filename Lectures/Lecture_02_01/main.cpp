@@ -7,7 +7,7 @@ int main()
     int tala;
     cin >> tala;
 
-    if ( ??? ) {
+    if ( tala % 2 == 0 ) {
         cout << tala << " is even" << endl;
     }
     else {
