@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-    int heiltala = 2147483647;
+    unsigned int heiltala = 2147483647;
+
+    cout << heiltala << endl;
 
     heiltala = heiltala + 1;
 
