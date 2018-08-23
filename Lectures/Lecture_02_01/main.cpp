@@ -4,10 +4,12 @@ using namespace std;
 
 int main()
 {
-    unsigned long long stortala = 0;
+    char a;
+    cin >> a;
 
-    stortala = stortala - 1;
-    cout << stortala << endl;
+    int tala = a;
+
+    cout << a << " - " << tala << endl;
 
     return 0;
 }
