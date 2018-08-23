@@ -12,7 +12,7 @@ int main()
         cout << "Write a number: ";
         cin >> tala;
 
-        if ( tala = 42 ) {
+        if ( tala == 42 ) {
             user_wrote_42 = true;
         }
     }
