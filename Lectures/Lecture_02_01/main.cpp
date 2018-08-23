@@ -8,8 +8,8 @@ int main()
     cin >> tala;
 
 
-    if (tala = 42) {
-        cout << "You wrote 42!" << endl;
+    if (tala = 0) {
+        cout << "You wrote zero" << endl;
     }
     else {
         cout << "something..." << endl;
