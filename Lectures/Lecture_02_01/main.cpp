@@ -4,12 +4,16 @@ using namespace std;
 
 int main()
 {
-    char a = 'a', b = 'b';
+    string nafn;
+    int aldur;
 
-    cin >> a >> b;
+    cout << "Hi, what is your name? ";
+    cin >> nafn;
 
-    cout << "a = \"" << a << "\"" << endl;
-    cout << "b = \"" << b << "\"" << endl;
+    cout << "Welcome " << nafn << ", how old are you?";
+    cin >> aldur;
+
+    cout << "Hi " << nafn << ", you are " << aldur << " years old." << endl;
 
 
     return 0;
