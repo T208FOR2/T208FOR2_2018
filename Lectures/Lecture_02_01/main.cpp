@@ -4,17 +4,10 @@ using namespace std;
 
 int main()
 {
-    string nafn;
-    int aldur;
+    unsigned long long stortala = 0;
 
-    cout << "Hi, what is your name? ";
-    cin >> nafn;
-
-    cout << "Welcome " << nafn << ", how old are you?";
-    cin >> aldur;
-
-    cout << "Hi " << nafn << ", you are " << aldur << " years old." << endl;
-
+    stortala = stortala - 1;
+    cout << stortala << endl;
 
     return 0;
 }
