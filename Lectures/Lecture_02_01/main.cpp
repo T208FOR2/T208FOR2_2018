@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int heiltala = 0;
+    int heiltala = 2147483647;
 
-    cin >> heiltala;
+    heiltala = heiltala + 1;
 
     cout << heiltala << endl;
 
