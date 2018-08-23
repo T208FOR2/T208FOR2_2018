@@ -4,10 +4,11 @@ using namespace std;
 
 int main()
 {
+    int tala;
     char a;
-    cin >> a;
+    cin >> tala;
 
-    int tala = a;
+    a = tala;
 
     cout << a << " - " << tala << endl;
 
