@@ -4,15 +4,12 @@ using namespace std;
 
 int main()
 {
-    int tala;
-    cin >> tala;
+    double sum = 0;
 
-    if ( tala % 2 == 0 ) {
-        cout << tala << " is even" << endl;
+    for (int i = 1; i < 10; i++) {
+        sum = sum + 1/i;
     }
-    else {
-        cout << tala << " is odd" << endl;
-    }
+    cout << sum << endl;
 
     return 0;
 }
