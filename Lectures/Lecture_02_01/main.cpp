@@ -4,12 +4,15 @@ using namespace std;
 
 int main()
 {
-    double a;
-    int b;
-    cin >> a >> b;
+    int tala;
+    cin >> tala;
 
-    cout << a << " / " << b << " = " << a / b << endl;
-    cout << a << " % " << b << " = " << a % b << endl;
+    if ( ??? ) {
+        cout << tala << " is even" << endl;
+    }
+    else {
+        cout << tala << " is odd" << endl;
+    }
 
     return 0;
 }
