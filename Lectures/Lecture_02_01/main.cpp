@@ -4,13 +4,16 @@ using namespace std;
 
 int main()
 {
-    int team = 0;
+    int tala;
+    cin >> tala;
 
-    for (int i = 0; i < 20; i++) {
-        cout << "player " << i+1 << " in team " << (team % 4) + 1 << endl;
-        team = team + 1;
+
+    if (tala == 42) {
+        cout << "You wrote 42!" << endl;
     }
-
+    else {
+        cout << "something..." << endl;
+    }
 
 
     return 0;
