@@ -4,17 +4,13 @@ using namespace std;
 
 int main()
 {
-    int tala;
-    cin >> tala;
+    int x;
+    cin >> x;
 
-
-    if (tala = 0) {
-        cout << "You wrote zero" << endl;
+    while (x != 100) {
+        cout << x << endl;
+        x++;
     }
-    else {
-        cout << "something..." << endl;
-    }
-    cout << tala << endl;
 
     return 0;
 }
