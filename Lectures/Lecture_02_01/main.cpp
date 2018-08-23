@@ -4,13 +4,11 @@ using namespace std;
 
 int main()
 {
-    int tala;
-    char a;
-    cin >> tala;
+    double  a,b;
+    cin >> a >> b;
 
-    a = tala;
-
-    cout << a << " - " << tala << endl;
+    cout << a << " / " << b << " = " << a / b << endl;
+    //cout << a << " % " << b << " = " << a % b << endl;
 
     return 0;
 }
