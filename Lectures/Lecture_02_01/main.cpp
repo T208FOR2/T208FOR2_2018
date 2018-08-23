@@ -4,13 +4,13 @@ using namespace std;
 
 int main()
 {
-    unsigned int heiltala = 0;
+    char a = 'a', b = 'b';
 
-    cout << heiltala << endl;
+    cin >> a >> b;
 
-    heiltala = heiltala - 1;
+    cout << "a = \"" << a << "\"" << endl;
+    cout << "b = \"" << b << "\"" << endl;
 
-    cout << heiltala << endl;
 
     return 0;
 }
