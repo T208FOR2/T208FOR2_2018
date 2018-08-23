@@ -4,11 +4,11 @@ using namespace std;
 
 int main()
 {
-    unsigned int heiltala = 2147483647;
+    unsigned int heiltala = 0;
 
     cout << heiltala << endl;
 
-    heiltala = heiltala + 1;
+    heiltala = heiltala - 1;
 
     cout << heiltala << endl;
 
