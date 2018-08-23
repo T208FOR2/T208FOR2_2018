@@ -4,12 +4,10 @@ using namespace std;
 
 int main()
 {
-    double sum = 0;
-
-    for (int i = 1; i < 1000000; i++) {
-        sum = sum + 1.0/i;
+    for (double i = 0.0; i < 10.0; i++) {
+        cout.precision(20);
+        cout << i << endl;
     }
-    cout << sum << endl;
 
     return 0;
 }
