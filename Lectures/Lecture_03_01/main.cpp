@@ -22,3 +22,37 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+double calculate_tax_tennessee(double salary) {
+    double the_taxratio = 0.4;
+    double thetax = salary * the_taxratio;
+    return thetax;
+}
+
+
+
+
+
+
+
+
+
