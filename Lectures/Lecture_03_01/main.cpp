@@ -4,17 +4,12 @@ using namespace std;
 
 int main()
 {
-    int x;
-    cin >> x;
-
-    if (100.0 / x > 10) {
-        cout << "Hi" << endl;
+    int i;
+    for (i = 0; i < 100; i++) {
+        cout << i;
     }
-    else {
-        cout << "Something else..." << endl;
-    }
-    cout << x << endl;
-
+    cout << endl;
+    cout << i << endl;
 
     return 0;
 }
