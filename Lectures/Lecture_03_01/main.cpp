@@ -7,7 +7,7 @@ int main()
     int x;
     cin >> x;
 
-    if (x++ == 7 || x++ == 9 || x++ == 13) {
+    if (100.0 / x > 10) {
         cout << "Hi" << endl;
     }
     else {
