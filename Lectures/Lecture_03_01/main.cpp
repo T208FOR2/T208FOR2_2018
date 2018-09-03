@@ -22,6 +22,9 @@ int main()
 
 
 double calculate_tax_georgia(double salary) {
+    if (salary < 0) {
+        return 0;
+    }
     if (salary < 100000) {
         return salary * 0.35;
     }
