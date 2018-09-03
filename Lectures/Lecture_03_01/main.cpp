@@ -7,7 +7,8 @@ int main()
     int x;
     cin >> x;
 
-    if ( x + 18 <= 200) {
+    if ( (x++) < 42) {
+        cout << x << endl;
         cout << "Hi!" << endl;
     }
 
