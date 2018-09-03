@@ -7,7 +7,7 @@ int main()
     int x;
     cin >> x;
 
-    if ( (x++) < 42) {
+    if ( x++ < 42) {
         cout << x << endl;
         cout << "Hi!" << endl;
     }
