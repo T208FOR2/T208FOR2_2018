@@ -11,35 +11,19 @@ int main()
     cin >> laun;
 
     tax_tennessee = calculate_tax_tennessee(laun);
-
-    if (laun < 100000) {
-        tax_georgia = laun * 0.35;
-    }
-    else {
-        tax_georgia = 100000*0.35 + (laun - 100000) * 0.7;
-    }
-
+    tax_georgia = calculate_tax_georgia(laun);
 
     return 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+double calculate_tax_georgia(double salary) {
+    if (salary < 100000) {
+        return salary * 0.35;
+    }
+    else {
+        return 100000*0.35 + (salary - 100000) * 0.7;
+    }
+}
 
 
 double calculate_tax_tennessee(double salary) {
@@ -47,12 +31,4 @@ double calculate_tax_tennessee(double salary) {
     double thetax = salary * the_taxratio;
     return thetax;
 }
-
-
-
-
-
-
-
-
 
