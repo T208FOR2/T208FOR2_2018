@@ -7,12 +7,13 @@ int main()
     int x;
     cin >> x;
 
-    if (x == 7 || x == 9 || x == 13) {
+    if (x++ == 7 || x++ == 9 || x++ == 13) {
         cout << "Hi" << endl;
     }
     else {
         cout << "Something else..." << endl;
     }
+    cout << x << endl;
 
 
     return 0;
