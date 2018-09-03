@@ -4,8 +4,12 @@ using namespace std;
 
 int main()
 {
+    int x;
+    cin >> x;
 
-    cout << 2 * 42 + 4 - 23/5 << endl;
+    if ( x + 18 <= 200) {
+        cout << "Hi!" << endl;
+    }
 
     return 0;
 }
