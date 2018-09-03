@@ -1,12 +1,13 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    cout << pow(4,2.0) << endl;
+    int tala1,tala2;
+    cin >> tala1 >> tala2;
 
+    cout << tala / 2 << endl;
 
     return 0;
 }
