@@ -4,12 +4,17 @@ using namespace std;
 
 int main()
 {
-    string nafn;
-    cin >> nafn;
+    string something = "";
 
-    for (int i = 100; i < 3; i++) {
-        cout << "Hi" << nafn << endl;
+    while (true) {
+        cin >> something;
+
+        if (something == "please") {
+            break;
+        }
     }
+
+
 
 
     return 0;
