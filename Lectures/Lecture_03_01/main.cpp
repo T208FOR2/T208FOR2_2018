@@ -7,7 +7,7 @@ int main()
     int tala1,tala2;
     cin >> tala1 >> tala2;
 
-    cout << tala / 2 << endl;
+    cout << static_cast<double>(tala1) / tala2 << endl;
 
     return 0;
 }
