@@ -4,10 +4,13 @@ using namespace std;
 
 int main()
 {
-    int tala1,tala2;
-    cin >> tala1 >> tala2;
+    int laun;
+    double tax_tennessee, tax_georgia, tax_something, tax_otherstate;
+    cin >> laun;
 
-    cout << static_cast<double>(tala1) / tala2 << endl;
+    tax_tennessee
+
+
 
     return 0;
 }
