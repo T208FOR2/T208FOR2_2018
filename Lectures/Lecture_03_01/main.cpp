@@ -12,8 +12,10 @@ int main()
     double tax_tennessee, tax_georgia, tax_something, tax_otherstate;
     cin >> laun;
 
-    tax_tennessee = calculate_tax_tennessee(laun);
+    //tax_tennessee = calculate_tax_tennessee(laun);
     tax_georgia = calculate_tax_georgia(laun);
+
+    cout << tax_georgia << endl;
 
     return 0;
 }
