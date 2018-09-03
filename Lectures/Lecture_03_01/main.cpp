@@ -3,6 +3,8 @@
 using namespace std;
 
 double calculate_tax_tennessee(double salary);
+double calculate_tax_georgia(double salary);
+
 
 int main()
 {
@@ -16,6 +18,7 @@ int main()
     return 0;
 }
 
+
 double calculate_tax_georgia(double salary) {
     if (salary < 100000) {
         return salary * 0.35;
@@ -24,7 +27,6 @@ double calculate_tax_georgia(double salary) {
         return 100000*0.35 + (salary - 100000) * 0.7;
     }
 }
-
 
 double calculate_tax_tennessee(double salary) {
     double the_taxratio = 0.4;
