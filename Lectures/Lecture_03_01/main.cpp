@@ -4,16 +4,8 @@ using namespace std;
 
 int main()
 {
-    {
-        string nafn;
-        cin >> nafn;
-        {
-            cout << "Hi " << nafn << endl;
-        }
 
-    }
-
-
+    cout << 2 * 42 + 4 - 23/5 << endl;
 
     return 0;
 }
