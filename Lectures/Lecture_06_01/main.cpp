@@ -11,13 +11,8 @@ int main()
 {
     char c;
     ifstream theinputfile;
-    open_file(theinputfile, "/Users/Eyjo/Desktop/grimm.txt");
+    open_file(theinputfile, "/Users/Eyjo/Desktop/test2.txt");
 
-    while ( !theinputfile.eof() ) {
-        theinputfile.get(c);
-        cout << c;
-    }
-    cout << endl;
 
     theinputfile.close();
     return 0;
