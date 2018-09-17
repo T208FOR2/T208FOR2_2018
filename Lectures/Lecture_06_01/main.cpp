@@ -7,7 +7,8 @@ using namespace std;
 
 int main()
 {
-    int tala;
+    int tala, totalsum = 0, counter = 0;
+
     ifstream theinputfile;
     //theinputfile.open("randomtolur.txt");
     theinputfile.open("/Users/Eyjo/Desktop/randomtolur.txt");
@@ -18,9 +19,9 @@ int main()
         exit(1);
     }
 
-    for (int i = 0; i < 5; i++) {
-        theinputfile >> tala;
-        cout << tala << endl;
+    while (theinputfile >> tala) {
+        totalsum += tala;
+        counter++;
     }
 
     theinputfile.close();
