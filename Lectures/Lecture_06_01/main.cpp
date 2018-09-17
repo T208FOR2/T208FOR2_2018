@@ -13,7 +13,7 @@ int main()
     ifstream theinputfile;
     open_file(theinputfile, "/Users/Eyjo/Desktop/grimm.txt");
 
-    for (int i = 0; i < 500; i++) {
+    while ( !theinputfile.eof() ) {
         theinputfile.get(c);
         cout << c;
     }
