@@ -9,10 +9,19 @@ void open_file(ifstream& theinputfile, string thefilename);
 
 int main()
 {
-    char c;
+    string nafn,nafn_staerst;
+    int nr, a,b,c;
+    int staerst = 0;
     ifstream theinputfile;
     open_file(theinputfile, "/Users/Eyjo/Desktop/test2.txt");
 
+    while ( theinputfile >> nr && theinputfile >> nafn && theinputfile >> a && theinputfile >> b && theinputfile >> c ) {
+        if (a + b + c > staerst) {
+            staerst = a+b+c;
+            nafn_staerst = nafn;
+        }
+    }
+    cout << "The largest sum was " << staerst << " and belongs to " << nafn_staerst << endl;
 
     theinputfile.close();
     return 0;
