@@ -6,7 +6,7 @@
 using namespace std;
 
 void open_file(ifstream& theinputfile, string thefilename);
-void open_file(ofstream& theinputfile, string thefilename);
+void open_file(ofstream& theoutputfile, string thefilename);
 
 int main()
 {
@@ -24,8 +24,6 @@ int main()
     }
     theinputfile.close();
 
-
-
     theoutputfile << "The average is: " << static_cast<double>(totalsum) / counter << endl;
 
     theoutputfile.close();
@@ -42,10 +40,10 @@ void open_file(ifstream& theinputfile, string thefilename) {
     }
 }
 
-void open_file(ofstream& theinputfile, string thefilename) {
-    theinputfile.open( thefilename.c_str() );
+void open_file(ofstream& theoutputfile, string thefilename) {
+    theoutputfile.open( thefilename.c_str() );
 
-    if ( theinputfile.fail() ) {
+    if ( theoutputfile.fail() ) {
         cout << "Can't open the file: " << thefilename << endl;
         exit(1);
     }
