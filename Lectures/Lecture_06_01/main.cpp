@@ -5,6 +5,8 @@
 
 using namespace std;
 
+void open_file(fstream& theinputfile, string thefilename);
+
 int main()
 {
     int tala, totalsum = 0, counter = 0;
@@ -12,14 +14,7 @@ int main()
     ifstream theinputfile;
     ofstream theoutputfile;
 
-    //theinputfile.open("randomtolur.txt");
-    theinputfile.open("/Users/Eyjo/Desktop/randomtolur.txt");
-    //theinputfile.open("c:\\Users\\Eyjo\\Desktop\\randomtolur.txt"); // <-- WINDOWS
 
-    if ( theinputfile.fail() ) {
-        cout << "Can't open the file!!!" << endl;
-        exit(1);
-    }
 
     while (theinputfile >> tala) {
         totalsum += tala;
@@ -28,7 +23,7 @@ int main()
     theinputfile.close();
 
 
-    theoutputfile.open("nidurstada.txt");
+    theoutputfile.open("/Users/Eyjo/Desktop/nidurstada.txt");
     if (theoutputfile.fail()) {
         cout << "error!" << endl;
         exit(2);
@@ -40,3 +35,13 @@ int main()
 
     return 0;
 }
+
+void open_file(fstream& theinputfile, string thefilename) {
+    theinputfile.open( thefilename.c_str() );
+
+    if ( theinputfile.fail() ) {
+        cout << "Can't open the file: " << thefilename << endl;
+        exit(1);
+    }
+}
+
