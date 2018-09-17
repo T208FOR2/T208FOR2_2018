@@ -10,6 +10,8 @@ int main()
     int tala, totalsum = 0, counter = 0;
 
     ifstream theinputfile;
+    ofstream theoutputfile;
+
     //theinputfile.open("randomtolur.txt");
     theinputfile.open("/Users/Eyjo/Desktop/randomtolur.txt");
     //theinputfile.open("c:\\Users\\Eyjo\\Desktop\\randomtolur.txt"); // <-- WINDOWS
@@ -25,8 +27,16 @@ int main()
     }
     theinputfile.close();
 
-    cout << totalsum << " - " << counter << endl;
 
+    theoutputfile.open("nidurstada.txt");
+    if (theoutputfile.fail()) {
+        cout << "error!" << endl;
+        exit(2);
+    }
+
+    theoutputfile << "The average is: " << static_cast<double>(totalsum) / counter << endl;
+
+    theoutputfile.close();
 
     return 0;
 }
