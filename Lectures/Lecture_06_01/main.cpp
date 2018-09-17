@@ -9,15 +9,16 @@ void open_file(ifstream& theinputfile, string thefilename);
 
 int main()
 {
-
+    char c;
     ifstream theinputfile;
-    ofstream theoutputfile;
-
     open_file(theinputfile, "/Users/Eyjo/Desktop/grimm.txt");
 
+    for (int i = 0; i < 100; i++) {
+        theinputfile.get(c);
+        cout << c << endl;
+    }
+
     theinputfile.close();
-
-
     return 0;
 }
 
