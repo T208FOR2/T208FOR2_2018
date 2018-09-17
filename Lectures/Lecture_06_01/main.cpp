@@ -7,10 +7,10 @@ using namespace std;
 
 int main()
 {
-    string tala;
+    int tala;
     ifstream theinputfile;
     //theinputfile.open("randomtolur.txt");
-    theinputfile.open("/Users/Eyjo/Desktop/randomtolur2.txt");
+    theinputfile.open("/Users/Eyjo/Desktop/randomtolur.txt");
     //theinputfile.open("c:\\Users\\Eyjo\\Desktop\\randomtolur.txt"); // <-- WINDOWS
 
     if ( theinputfile.fail() ) {
