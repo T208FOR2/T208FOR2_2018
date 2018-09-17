@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+    int tala;
     ifstream theinputfile;
     //theinputfile.open("randomtolur.txt");
     theinputfile.open("/Users/Eyjo/Desktop/randomtolur.txt");
@@ -16,7 +17,10 @@ int main()
         exit(1);
     }
 
-    // something clever!
+    for (int i = 0; i < 5; i++) {
+        theinputfile >> tala;
+        cout << tala << endl;
+    }
 
     theinputfile.close();
 
