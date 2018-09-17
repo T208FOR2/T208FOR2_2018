@@ -23,8 +23,10 @@ int main()
         totalsum += tala;
         counter++;
     }
-
     theinputfile.close();
+
+    cout << totalsum << " - " << counter << endl;
+
 
     return 0;
 }
