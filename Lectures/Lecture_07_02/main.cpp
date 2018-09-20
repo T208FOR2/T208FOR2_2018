@@ -4,6 +4,7 @@ using namespace std;
 const int FJOLDI = 24;
 
 void prenta_fylki(int a[], int n);
+void snua_vid_fylki(int tolur[], int n);
 
 int main()
 {
@@ -16,19 +17,20 @@ int main()
 
     prenta_fylki(tolur, FJOLDI);
 
-    for (int i = 0; i < FJOLDI; i++) {
-        tmp = tolur[i];
-        tolur[i] = tolur[FJOLDI-i-1];
-        tolur[FJOLDI-i-1] = tmp;
-
-        cout << i << ": ";
-        prenta_fylki(tolur, FJOLDI);
-    }
+    snua_vid_fylki(tolur, FJOLDI);
 
     prenta_fylki(tolur, FJOLDI);
 
 
     return 0;
+}
+
+void snua_vid_fylki(tolur[], int n) {
+    for (int i = 0; i < n/2; i++) {
+        tmp = tolur[i];
+        tolur[i] = tolur[n-i-1];
+        tolur[n-i-1] = tmp;
+    }
 }
 
 void prenta_fylki(int a[], int n) {
