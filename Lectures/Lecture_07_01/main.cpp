@@ -21,7 +21,7 @@ int main()
 
     while (theinputfile >> inntak_deild && theinputfile >> ar &&
            theinputfile >> kk && theinputfile >> kvk) {
-
+        cout << inntak_deild << " " << ar << " " << kk << " " << kvk << endl;
     }
 
 
