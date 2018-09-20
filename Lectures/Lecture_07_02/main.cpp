@@ -12,12 +12,12 @@ int main()
         tolur[i] = i;
     }
 
+    tolur[143453242] = 42;
+
     for (int i = 0; i < FJOLDI; i++) {
         cout << tolur[i] << " ";
     }
     cout << endl;
-
-    cout << tolur[1098234] << endl;
 
     return 0;
 }
