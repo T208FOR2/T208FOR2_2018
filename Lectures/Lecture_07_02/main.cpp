@@ -20,6 +20,9 @@ int main()
         tmp = tolur[i];
         tolur[i] = tolur[FJOLDI-i-1];
         tolur[FJOLDI-i-1] = tmp;
+
+        cout << i << ": ";
+        prenta_fylki(tolur, FJOLDI);
     }
 
     prenta_fylki(tolur, FJOLDI);
