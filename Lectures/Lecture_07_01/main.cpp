@@ -10,7 +10,11 @@ void open_file(ifstream& inputfile, string filename);
 int main()
 {
     ifstream theinputfile;
+    string deild;
     open_file(theinputfile, "/Users/Eyjo/Desktop/hr_bachelor.txt");
+
+    cout << "Please write a name of a department: ";
+    cin >> deild;
 
 
 
