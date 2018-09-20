@@ -10,7 +10,7 @@ void open_file(ifstream& inputfile, string filename);
 int main()
 {
     ifstream theinputfile;
-    string deild;
+    string deild, tmp;
     string inntak_deild;
     int ar,kk,kvk;
 
@@ -18,6 +18,10 @@ int main()
 
     cout << "Please write a name of a department: ";
     cin >> deild;
+
+    for (int i = 0; i < 4; i++) {
+        theinputfile >> tmp;
+    }
 
     while (theinputfile >> inntak_deild && theinputfile >> ar &&
            theinputfile >> kk && theinputfile >> kvk) {
