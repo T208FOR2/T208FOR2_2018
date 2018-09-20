@@ -1,8 +1,9 @@
 #include <iostream>
-
 using namespace std;
 
 const int FJOLDI = 24;
+
+void prenta_fylki(int a[], int n);
 
 int main()
 {
@@ -12,10 +13,19 @@ int main()
         tolur[i] = i;
     }
 
-    for (int i = 0; i < FJOLDI; i++) {
-        cout << tolur[i] << " ";
-    }
-    cout << endl;
+    prenta_fylki(tolur, FJOLDI);
+
+    //snua_vid_fylki ???
+
+    prenta_fylki(tolur, FJOLDI);
+
 
     return 0;
+}
+
+void prenta_fylki(int a[], int n) {
+    for (int i = 0; i < n; i++) {
+        cout << a[i] << " ";
+    }
+    cout << endl;
 }
