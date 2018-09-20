@@ -13,6 +13,7 @@ int main()
     string deild, tmp;
     string inntak_deild;
     int ar,kk,kvk;
+    bool found_department = false;
 
     open_file(theinputfile, "/Users/Eyjo/Desktop/hr_bachelor.txt");
 
@@ -27,10 +28,13 @@ int main()
            theinputfile >> kk && theinputfile >> kvk) {
         if (inntak_deild == deild) {
             cout << ar << ": " << kk + kvk << endl;
+            found_department = true;
         }
     }
 
-    cout << "Sorry, I can't find the department " << deild << endl;
+    if ( !found_department ) {
+        cout << "Sorry, I can't find the department " << deild << endl;
+    }
 
     theinputfile.close();
     return 0;
