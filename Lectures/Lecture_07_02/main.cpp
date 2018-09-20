@@ -9,7 +9,6 @@ void snua_vid_fylki(int tolur[], int n);
 int main()
 {
     int tolur[FJOLDI];
-    int tmp;
 
     for (int i = 0; i < FJOLDI; i++) {
         tolur[i] = i;
@@ -25,7 +24,8 @@ int main()
     return 0;
 }
 
-void snua_vid_fylki(tolur[], int n) {
+void snua_vid_fylki(int tolur[], int n) {
+    int tmp;
     for (int i = 0; i < n/2; i++) {
         tmp = tolur[i];
         tolur[i] = tolur[n-i-1];
