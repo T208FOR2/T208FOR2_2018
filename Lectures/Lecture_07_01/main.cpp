@@ -9,7 +9,12 @@ void open_file(ifstream& inputfile, string filename);
 
 int main()
 {
+    ifstream theinputfile;
+    open_file(theinputfile, "/Users/Eyjo/Desktop/hr_bachelor.txt");
 
+
+
+    theinputfile.close();
     return 0;
 }
 
