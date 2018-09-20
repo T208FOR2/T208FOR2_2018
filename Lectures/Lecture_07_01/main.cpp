@@ -30,7 +30,7 @@ int main()
         }
     }
 
-
+    cout << "Sorry, I can't find the department " << deild << endl;
 
     theinputfile.close();
     return 0;
