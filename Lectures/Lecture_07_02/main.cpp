@@ -16,7 +16,7 @@ int main()
     prenta_fylki(tolur, FJOLDI);
 
     for (int i = 0; i < FJOLDI; i++) {
-        tolur[i] = tolur[FJOLDI-i];
+        tolur[i] = tolur[FJOLDI-i-1];
     }
 
     prenta_fylki(tolur, FJOLDI);
