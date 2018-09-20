@@ -15,7 +15,9 @@ int main()
 
     prenta_fylki(tolur, FJOLDI);
 
-    //snua_vid_fylki ???
+    for (int i = 0; i < FJOLDI; i++) {
+        tolur[i] = tolur[FJOLDI-i];
+    }
 
     prenta_fylki(tolur, FJOLDI);
 
