@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int FJOLDI = 10;
+const int FJOLDI = 5;
 
 int main()
 {
@@ -16,6 +16,8 @@ int main()
         cout << tolur[i] << " ";
     }
     cout << endl;
+
+    cout << tolur[3] << endl;
 
     return 0;
 }
