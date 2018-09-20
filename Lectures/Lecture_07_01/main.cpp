@@ -11,10 +11,18 @@ int main()
 {
     ifstream theinputfile;
     string deild;
+    string inntak_deild;
+    int ar,kk,kvk;
+
     open_file(theinputfile, "/Users/Eyjo/Desktop/hr_bachelor.txt");
 
     cout << "Please write a name of a department: ";
     cin >> deild;
+
+    while (theinputfile >> inntak_deild && theinputfile >> ar &&
+           theinputfile >> kk && theinputfile >> kvk) {
+
+    }
 
 
 
