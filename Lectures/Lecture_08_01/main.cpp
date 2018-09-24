@@ -2,22 +2,28 @@
 
 using namespace std;
 
-const int MAX_FJOLDI = 100;
+const int NUM = 10;
 
 int main()
 {
-    int n;
-    cin >> n;
+    string texti[NUM];
+    string keyword;
 
-    int tolur[ MAX_FJOLDI ];
-    for (int i = 0; i < n; i++) {
-        cin >> tolur[i];
+    for (int i = 0; i < NUM; i++) {
+        cin >> texti[i];
     }
 
-    for (int i = n-1; i >= 0; i--) {
-        cout << tolur[i] << " ";
+    cout >> "What word are you looking for? ";
+    cin >> keyword;
+    while (keyword != "quit") {
+        int index = find_element(????);
+
+        //???
+
+        cout >> "What word are you looking for? ";
+        cin >> keyword;
     }
-    cout << endl;
+
 
     return 0;
 }
