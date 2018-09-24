@@ -19,8 +19,8 @@ int main()
     cout << "What number are you looking for? ";
     cin >> keyword;
     while (keyword != -1) {
-        int index = find_element( tolur, NUM, keyword );
-        //int index = binary_search( tolur, NUM, keyword );
+        //int index = find_element( tolur, NUM, keyword );
+        int index = binary_search( tolur, NUM, keyword );
 
         if (index >= 0) {
             cout << "The number " << keyword << " is number ";
