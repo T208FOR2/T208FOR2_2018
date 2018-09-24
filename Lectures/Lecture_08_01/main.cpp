@@ -18,7 +18,7 @@ int main()
     cout << "What word are you looking for? ";
     cin >> keyword;
     while (keyword != "quit") {
-        int index = find_element(????);
+        int index = find_element( texti, NUM, keyword );
 
         if (index >= 0) {
             cout << "The word " << keyword << " is number";
