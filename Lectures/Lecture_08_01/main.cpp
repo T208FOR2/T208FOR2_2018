@@ -2,7 +2,7 @@
 
 using namespace std;
 
-const int NUM = 10;
+const int NUM = 1000000;
 
 int find_element( int s[], int thesize, int keyword );
 int binary_search(int s[], int thesize, int keyword);
@@ -19,8 +19,8 @@ int main()
     cout << "What number are you looking for? ";
     cin >> keyword;
     while (keyword != -1) {
-        //int index = find_element( tolur, NUM, keyword );
-        int index = binary_search( tolur, NUM, keyword );
+        int index = find_element( tolur, NUM, keyword );
+        //int index = binary_search( tolur, NUM, keyword );
 
         if (index >= 0) {
             cout << "The number " << keyword << " is number ";
@@ -53,6 +53,8 @@ int binary_search(int s[], int thesize, int keyword) {
             return middle;
         }
         middle = (low + high) / 2;
+
+        cout << "Low: " << low << " - High: " << high << endl;
     }
 
     return -1;
@@ -64,6 +66,7 @@ int find_element( int s[], int thesize, int keyword ) {
         if (keyword == s[i]) {
             return i;
         }
+        cout << "Position " << i << endl;
     }
     return -1;
 }
