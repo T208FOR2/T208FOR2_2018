@@ -2,13 +2,14 @@
 
 using namespace std;
 
+const int MAX_FJOLDI = 100;
 
 int main()
 {
     int n;
     cin >> n;
 
-    int tolur[ n ];
+    int tolur[ MAX_FJOLDI ];
     for (int i = 0; i < n; i++) {
         cin >> tolur[i];
     }
