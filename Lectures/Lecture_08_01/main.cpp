@@ -18,7 +18,13 @@ int main()
     while (keyword != "quit") {
         int index = find_element(????);
 
-        //???
+        if (index >= 0) {
+            cout << "The word " << keyword << " is number";
+            cout << index << " in the list." << endl;
+        }
+        else {
+            cout << "Sorry, can't find the word " << keyword << endl;
+        }
 
         cout >> "What word are you looking for? ";
         cin >> keyword;
