@@ -25,8 +25,17 @@ int main()
 }
 
 void insertion_sort(int a[], int n) {
+    int i, j;
     int tmp;
-
+    for (i = 0; i < n; i++) {
+        tmp = a[i];
+        j = i;
+        while (j > 0 && a[j-1] > tmp ) {
+            a[j] = a[j-1];
+            j--;
+        }
+        a[j] = tmp;
+    }
 }
 
 
