@@ -4,31 +4,32 @@ using namespace std;
 
 const int NUM = 10;
 
-int find_element( string s[], int thesize, string keyword );
+int find_element( int s[], int thesize, int keyword );
+int binary_search(int s[], int thesize, int keyword);
 
 int main()
 {
-    string texti[NUM];
-    string keyword;
+    int tolur[NUM];
+    int keyword;
 
     for (int i = 0; i < NUM; i++) {
-        cin >> texti[i];
+        tolur[i] = i;
     }
 
-    cout << "What word are you looking for? ";
+    cout << "What number are you looking for? ";
     cin >> keyword;
-    while (keyword != "quit") {
-        int index = find_element( texti, NUM, keyword );
+    while (keyword != -1) {
+        int index = find_element( tolur, NUM, keyword );
 
         if (index >= 0) {
-            cout << "The word " << keyword << " is number ";
+            cout << "The number " << keyword << " is number ";
             cout << index + 1 << " in the list." << endl;
         }
         else {
-            cout << "Sorry, can't find the word " << keyword << endl;
+            cout << "Sorry, can't find the number " << keyword << endl;
         }
 
-        cout << "What word are you looking for? ";
+        cout << "What number are you looking for? ";
         cin >> keyword;
     }
 
@@ -36,7 +37,7 @@ int main()
 }
 
 
-bin binary_search(string s[], int thesize, string keyword) {
+int binary_search(int s[], int thesize, int keyword) {
     int low = 0, high = thesize - 1;
     int middle = (low+high) / 2;
 
@@ -57,7 +58,7 @@ bin binary_search(string s[], int thesize, string keyword) {
 }
 
 
-int find_element( string s[], int thesize, string keyword ) {
+int find_element( int s[], int thesize, int keyword ) {
     for (int i = 0; i < thesize; i++) {
         if (keyword == s[i]) {
             return i;
@@ -76,10 +77,5 @@ int find_element( string s[], int thesize, string keyword ) {
     return index;
 }
 */
-
-
-
-
-
 
 
