@@ -35,6 +35,28 @@ int main()
     return 0;
 }
 
+
+bin binary_search(string s[], int thesize, string keyword) {
+    int low = 0, high = thesize - 1;
+    int middle = (low+high) / 2;
+
+    while (low < high) {
+        if (s[middle] < keyword) {
+            low = middle+1;
+        }
+        else if (s[middle] > keyword) {
+            high = middle-1;
+        }
+        else {
+            return middle;
+        }
+        middle = (low + high) / 2;
+    }
+
+    return -1;
+}
+
+
 int find_element( string s[], int thesize, string keyword ) {
     for (int i = 0; i < thesize; i++) {
         if (keyword == s[i]) {
