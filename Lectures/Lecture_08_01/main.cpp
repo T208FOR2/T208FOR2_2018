@@ -21,8 +21,8 @@ int main()
         int index = find_element( texti, NUM, keyword );
 
         if (index >= 0) {
-            cout << "The word " << keyword << " is number";
-            cout << index << " in the list." << endl;
+            cout << "The word " << keyword << " is number ";
+            cout << index + 1 << " in the list." << endl;
         }
         else {
             cout << "Sorry, can't find the word " << keyword << endl;
