@@ -11,7 +11,13 @@ int main() {
 
     cout << "0123456789012345678901234567890" << endl;
     cout << s << endl;
-    cout << s.find(keyword) << endl;
+
+    if (s.find(keyword) > s.length() ) {
+        cout << "Can't find " << keyword << endl;
+    }
+    else {
+        cout << "the index of " << keyword << " is " << s.find(keyword) << endl;
+    }
 
 
     return 0;
