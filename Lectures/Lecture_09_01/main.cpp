@@ -1,22 +1,16 @@
 #include <iostream>
 #include <cstring>
+#include <cstdlib>
+#include <string>
 using namespace std;
 
 int main() {
-    int t[100];
-    char s[100] = "Hello world";
-    char s2[100] = "Hello world";
+    char s1[100] = "2134";
+    string s2 = "2134";
 
-    for (int i = 0; i < 100; i++) {
-        t[i] = 0;
-    }
+    cout << atoi(s1) << endl;
+    cout << atoi(s2.c_str()) << endl;
 
-    cout << s << endl;
-    cout << t << endl;
-
-    if (strcmp(s,s2) == 0) {
-        cout << "The strings are the same" << endl;
-    }
 
     return 0;
 }
