@@ -4,14 +4,12 @@
 using namespace std;
 
 int main() {
-    string s1,s2;
+    string s;
+    cin >> s;
 
-    cin >> s1;
-    cin.ignore(1000,'\n');
+    s[10] = 'X';
 
-    cin >> s2;
-
-    cout << s1 + s2 << endl;
+    cout << s << endl;
 
     return 0;
 }
