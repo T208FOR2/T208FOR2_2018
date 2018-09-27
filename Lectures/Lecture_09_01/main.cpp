@@ -9,6 +9,7 @@ int main() {
     getline(cin, s);
     cin >> keyword;
 
+    cout << "0123456789012345678901234567890" << endl;
     cout << s << endl;
     cout << s.find(keyword) << endl;
 
