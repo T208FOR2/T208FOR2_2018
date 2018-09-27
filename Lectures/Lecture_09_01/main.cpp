@@ -17,6 +17,11 @@ int main() {
 
     getline(theinputfile, s1) >> s2;
 
+    getline(theinputfile, s1);
+    theinputfile >> s2;
+
+    cout << s1 << " and " << s2 << " are strings " << endl;
+
     cout << s1 << endl;
     cout << s2 << endl;
 
