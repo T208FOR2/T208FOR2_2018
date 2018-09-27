@@ -1,29 +1,17 @@
 #include <iostream>
-#include <fstream>
 #include <string>
-#include <cstdlib>
 
 using namespace std;
 
 int main() {
-    ifstream theinputfile;
     string s1,s2;
 
-    theinputfile.open("test.txt");
-    if (theinputfile.fail()) {
-        cout << "aldjgfpioafjsd" << endl;
-        exit(1);
-    }
+    cin >> s1;
+    cin.ignore(1000,'\n');
 
-    getline(theinputfile, s1) >> s2;
+    cin >> s2;
 
-    getline(theinputfile, s1);
-    theinputfile >> s2;
-
-    cout << s1 << " and " << s2 << " are strings " << endl;
-
-    cout << s1 << endl;
-    cout << s2 << endl;
+    cout << s1 + s2 << endl;
 
     return 0;
 }
