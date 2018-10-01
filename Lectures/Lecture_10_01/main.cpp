@@ -9,32 +9,19 @@ string capitalize(string s);
 
 int main()
 {
-    string s;
+    string s,a;
     getline(cin, s);
+    cin >> a;
 
-    //cout << toupper(s) << endl;
-    cout << capitalize(s) << endl;
+    cout << "01234567890123456789012345678901234567890" << endl;
+    cout << s;
+    if (s.find(a) < s.length() ) {
+        cout << "The word " << a << " starts at index " << s.find(a) << endl;
+    }
+    else {
+        cout << "Cannot find the word " << a << endl;
+    }
 
     return 0;
 }
 
-string toupper(string s) {
-    for (unsigned int i = 0; i < s.length(); i++) {
-        s[i] = toupper(s[i]);
-    }
-    return s;
-}
-
-string capitalize(string s) {
-    bool capitalizenextsymbol = true;
-    for (unsigned int i = 0; i < s.length(); i++) {
-        if (capitalizenextsymbol) {
-            s[i] = toupper(s[i]);
-        }
-        else {
-            s[i] = tolower(s[i]);
-        }
-        capitalizenextsymbol = (s[i] == ' ');
-    }
-    return s;
-}
