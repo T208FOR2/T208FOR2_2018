@@ -8,14 +8,14 @@ int count_word(string s, string a);
 
 int main()
 {
-    string s,a;
+    string s;
     getline(cin, s);
-    cin >> a;
+    // First we have a name and then a number
 
-    cout << "01234567890123456789012345678901234567890" << endl;
-    cout << s << endl;
-    cout << "find:         " << s.find(a) << endl;
-    cout << "find_first_of:" << s.find_first_of(a) << endl;
+    unsigned int pos = s.find_first_of("0123456789");
+
+    string name = s.substr(0,pos-2);
+
 
     return 0;
 }
