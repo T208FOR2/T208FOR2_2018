@@ -4,8 +4,7 @@
 
 using namespace std;
 
-string toupper(string s);
-string capitalize(string s);
+int count_word(string s, string a);
 
 int main()
 {
@@ -17,7 +16,7 @@ int main()
     cout << s << endl;
     if (s.find(a) < s.length() ) {
         cout << "The word \"" << a << "\" starts at index " << s.find(a) << endl;
-        cout << "and appears " << count_word(s,a) << " times."
+        cout << "and appears " << count_word(s,a) << " times." << endl;
     }
     else {
         cout << "Cannot find the word " << a << endl;
@@ -26,3 +25,12 @@ int main()
     return 0;
 }
 
+int count_word(string s, string a) {
+    int counter = 0;
+    unsigned int pos = s.find(a);
+    while ( pos < s.length() ) {
+        counter++;
+        pos = s.find(a, pos+1);
+    }
+    return counter;
+}
