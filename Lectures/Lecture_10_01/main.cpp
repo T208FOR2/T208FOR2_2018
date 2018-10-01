@@ -26,5 +26,15 @@ string toupper(string s) {
 }
 
 string capitalize(string s) {
+    bool capitalizenextsymbol = true;
+    for (unsigned int i = 0; i < s.length(); i++) {
+        if (capitalizenextsymbol) {
+            s[i] = toupper(s[i]);
+        }
+        else {
+            s[i] = tolower(s[i]);
+        }
+    }
 
+    return s;
 }
