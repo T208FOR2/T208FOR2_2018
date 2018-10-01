@@ -19,7 +19,6 @@ int main() {
         cout << "the index of " << keyword << " is " << s.find(keyword) << endl;
     }
 
-
     return 0;
 }
 
