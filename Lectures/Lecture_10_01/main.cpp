@@ -12,7 +12,7 @@ int main()
     string s;
     getline(cin, s);
 
-    cout << toupper(s) << endl;
+    //cout << toupper(s) << endl;
     cout << capitalize(s) << endl;
 
     return 0;
