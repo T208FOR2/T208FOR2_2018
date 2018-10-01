@@ -4,12 +4,21 @@
 
 using namespace std;
 
+string toupper(string s);
+
 int main()
 {
     string s;
     cin >> s;
 
-    cout << s[2] << endl;
+    cout << toupper(s) << endl;
 
     return 0;
+}
+
+string toupper(string s) {
+    for (unsigned int i = 0; i < s.length(); i++) {
+        s[i] = toupper(s[i]);
+    }
+    return s;
 }
