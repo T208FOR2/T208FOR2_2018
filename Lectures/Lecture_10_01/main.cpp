@@ -14,8 +14,9 @@ int main()
 
     unsigned int pos = s.find_first_of("0123456789");
 
-    string name = s.substr(0,pos-2);
+    string name = s.substr(0,pos-1);
 
+    cout << "Hi " << name << endl;
 
     return 0;
 }
