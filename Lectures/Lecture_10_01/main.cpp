@@ -5,6 +5,7 @@
 using namespace std;
 
 string toupper(string s);
+string capitalize(string s);
 
 int main()
 {
@@ -12,6 +13,7 @@ int main()
     getline(cin, s);
 
     cout << toupper(s) << endl;
+    cout << capitalize(s) << endl;
 
     return 0;
 }
@@ -21,4 +23,8 @@ string toupper(string s) {
         s[i] = toupper(s[i]);
     }
     return s;
+}
+
+string capitalize(string s) {
+
 }
