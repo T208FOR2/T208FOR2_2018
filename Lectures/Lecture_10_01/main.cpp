@@ -16,7 +16,8 @@ int main()
     cout << "01234567890123456789012345678901234567890" << endl;
     cout << s << endl;
     if (s.find(a) < s.length() ) {
-        cout << "The word " << a << " starts at index " << s.find(a) << endl;
+        cout << "The word \"" << a << "\" starts at index " << s.find(a) << endl;
+        cout << "and appears " << count_word(s,a) << " times."
     }
     else {
         cout << "Cannot find the word " << a << endl;
