@@ -9,7 +9,7 @@ string toupper(string s);
 int main()
 {
     string s;
-    cin >> s;
+    getline(cin, s);
 
     cout << toupper(s) << endl;
 
