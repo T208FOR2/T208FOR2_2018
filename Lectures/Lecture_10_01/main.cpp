@@ -11,6 +11,7 @@ int main()
     string s,a;
     getline(cin, s);
     cin >> a;
+    a = " " + a + " ";
 
     cout << "01234567890123456789012345678901234567890" << endl;
     cout << s << endl;
