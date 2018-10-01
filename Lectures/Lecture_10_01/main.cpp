@@ -30,16 +30,11 @@ string capitalize(string s) {
     for (unsigned int i = 0; i < s.length(); i++) {
         if (capitalizenextsymbol) {
             s[i] = toupper(s[i]);
-            capitalizenextsymbol = false;
         }
         else {
             s[i] = tolower(s[i]);
         }
-
-        if (s[i] == ' ') {
-            capitalizenextsymbol = true;
-        }
+        capitalizenextsymbol = (s[i] == ' ');
     }
-
     return s;
 }
