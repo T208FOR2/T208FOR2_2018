@@ -53,15 +53,20 @@ int main() {
 
 void insertionsort(int counts[], string hashtags[], int n) {
     int i,j, tmp_int;
+    string tmp_str;
 
     for (i = 1; i < n; i++) {
         tmp_int = counts[i];
+        tmp_str = hashtags[i];
+
         j = i;
         while (j > 0 && counts[j-1] < tmp_int) {
             counts[j] = counts[j-1];
+            hashtags[j] = hashtags[j-1];
             j--;
         }
         counts[j] = tmp_int;
+        hashtags[j] = tmp_str;
     }
 }
 
