@@ -18,6 +18,10 @@ int main() {
     string tag, current_line;
     string hashtags[NUM];
     int counts[NUM];
+    for (int i = 0; i < NUM; i++) {
+        hashtags[i] = "";
+        counts[i] = 0;
+    }
 
     open_file(theinputfile, THEFILENAME);
 
