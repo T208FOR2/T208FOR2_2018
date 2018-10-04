@@ -23,7 +23,7 @@ int main() {
 }
 
 string getnexthashtag(string texti, unsigned int& pos) {
-unsigned int hashstart = texti.find("#",pos);
+unsigned int hashstart = texti.find("#", pos);
     unsigned int hashend;
     if (hashstart < texti.length()) {
         hashend = texti.find_first_not_of("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890", hashstart+1);
