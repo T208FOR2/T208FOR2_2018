@@ -13,7 +13,7 @@ int main() {
     while (hashstart < test.length()) {
         hashend = test.find_first_not_of("qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890", hashstart+1);
         cout << test.substr(hashstart, hashend-hashstart) << endl;
-        hashstart = test.find("#", hashstart+1);
+        hashstart = test.find("#", hashend);
     }
 
     return 0;
