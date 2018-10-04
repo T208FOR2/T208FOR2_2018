@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <cctype>
 
 using namespace std;
 
@@ -11,7 +12,7 @@ const int NUM = 10000;
 
 string getnexthashtag(string texti, unsigned int& pos);
 int indextofelement(string hashtags[], int n, string newelement);
-
+string tolower(string s);
 void open_file(ifstream &theinputfile, string thefilename);
 
 int main() {
@@ -42,11 +43,18 @@ int main() {
 
 int indextofelement(string hashtags[], int n, string newelement) {
     for (int i = 0; i < n; i++) {
-        if (hashtags[i] == newelement) {
+        if (tolower(hashtags[i]) == tolower(newelement)) {
             return i;
         }
     }
     return -1;
+}
+
+string tolower(string s) {
+    for (unsigned int i = 0; i < s.length(); i++) {
+        s[i] = tolower(s[i]);
+    }
+    return s;
 }
 
 string getnexthashtag(string texti, unsigned int& pos) {
