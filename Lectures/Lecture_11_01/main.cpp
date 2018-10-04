@@ -16,6 +16,8 @@ string tolower(string s);
 void open_file(ifstream &theinputfile, string thefilename);
 void insertorupdatehashtags(string hashtags[], int counts[], int& n, string newelement);
 
+void insertionsort(int counts[], int n);
+
 int main() {
     ifstream theinputfile;
     string tag, current_line;
@@ -46,6 +48,21 @@ int main() {
 
     return 0;
 }
+
+void insertionsort(int counts[], int n) {
+    int i,j, tmp_int;
+
+    for (i = 1; i < n; i++) {
+        tmp_int = counts[i];
+        j = i;
+        while (j > 0 && counts[j-1] < tmp_int) {
+            counts[j] = counts[j-1];
+            j--;
+        }
+        counts[j] = tmp_int;
+    }
+}
+
 
 void insertorupdatehashtags(string hashtags[], int counts[], int& n, string newelement) {
     int index = indexofelement(hashtags, n, newelement);
