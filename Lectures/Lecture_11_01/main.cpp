@@ -16,7 +16,7 @@ string tolower(string s);
 void open_file(ifstream &theinputfile, string thefilename);
 void insertorupdatehashtags(string hashtags[], int counts[], int& n, string newelement);
 
-void insertionsort(int counts[], int n);
+void insertionsort(int counts[], string hashtags[], int n);
 
 int main() {
     ifstream theinputfile;
@@ -42,6 +42,8 @@ int main() {
         }
     }
 
+    insertionsort(counts, hashtags, n);
+
     for (int i = 0; i < 30; i++) {
         cout << hashtags[i] << " - " << counts[i] << endl;
     }
@@ -49,7 +51,7 @@ int main() {
     return 0;
 }
 
-void insertionsort(int counts[], int n) {
+void insertionsort(int counts[], string hashtags[], int n) {
     int i,j, tmp_int;
 
     for (i = 1; i < n; i++) {
