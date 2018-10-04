@@ -6,6 +6,7 @@
 using namespace std;
 
 const string NOHASHTAG = "no hashtag";
+
 string getnexthashtag(string texti, unsigned int& pos);
 
 int main() {
