@@ -10,6 +10,7 @@ const string THEFILENAME = "/Users/Eyjo/Desktop/twitter_maga.txt";
 const int NUM = 10000;
 
 string getnexthashtag(string texti, unsigned int& pos);
+int indextofelement(string hashtags[], int n, string newelement);
 
 void open_file(ifstream &theinputfile, string thefilename);
 
@@ -37,6 +38,15 @@ int main() {
     }
 
     return 0;
+}
+
+int indextofelement(string hashtags[], int n, string newelement) {
+    for (int i = 0; i < n; i++) {
+        if (hashtags[i] == newelement) {
+            return i;
+        }
+    }
+    return -1;
 }
 
 string getnexthashtag(string texti, unsigned int& pos) {
