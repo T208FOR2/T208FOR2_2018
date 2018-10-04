@@ -14,12 +14,13 @@ string getnexthashtag(string texti, unsigned int& pos);
 int indexofelement(string hashtags[], int n, string newelement);
 string tolower(string s);
 void open_file(ifstream &theinputfile, string thefilename);
+void insertorupdatehashtags(string hashtags[], int counts[], int& n, string newelement);
 
 int main() {
     ifstream theinputfile;
     string tag, current_line;
     string hashtags[NUM];
-    int counts[NUM];
+    int counts[NUM], n = 0;
     for (int i = 0; i < NUM; i++) {
         hashtags[i] = "";
         counts[i] = 0;
@@ -33,7 +34,8 @@ int main() {
         unsigned int pos = 0;
         tag = getnexthashtag(current_line, pos);
         while (tag != NOHASHTAG) {
-            cout << tag << endl;
+            insertorupdatehashtags(hashtags, counts, n, tag);
+
             tag = getnexthashtag(current_line,pos);
         }
     }
