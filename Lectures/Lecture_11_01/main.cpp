@@ -40,6 +40,10 @@ int main() {
         }
     }
 
+    for (int i = 0; i < 30; i++) {
+        cout << hashtags[i] << " - " << counts[i] << endl;
+    }
+
     return 0;
 }
 
