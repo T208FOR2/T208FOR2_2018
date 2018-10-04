@@ -9,7 +9,10 @@ const string NOHASHTAG = "no hashtag";
 
 string getnexthashtag(string texti, unsigned int& pos);
 
+void open_file(ifstream &theinputfile, string thefilename);
+
 int main() {
+    ifstream theinputfile;
     string test = "Lionel and Charles Ortel on Hillary Clinton and Targeting the Unprosecuted Clinton Crime Cartel [VIDEO] #LionelNation #MAGA #KAG2020 @realDonaldTrump @CharlesOrtel #HillaryForPrison #DrainTheSwamp #Midterms2018 #MontanaRally #ClintonCrimeFamily";
     string tag;
 
@@ -33,5 +36,13 @@ unsigned int hashstart = texti.find("#", pos);
     }
     else {
         return NOHASHTAG;
+    }
+}
+
+void open_file(ifstream &theinputfile, string thefilename) {
+    theinpufile.open(thefilename.c_str());
+    if (theinputfile.fail()) {
+        cout << "Can't open the file: " << thefilename << endl;
+        exit(1);
     }
 }
