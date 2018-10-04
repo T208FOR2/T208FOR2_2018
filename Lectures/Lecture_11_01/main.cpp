@@ -14,16 +14,19 @@ void open_file(ifstream &theinputfile, string thefilename);
 
 int main() {
     ifstream theinputfile;
-    string test = "Lionel and Charles Ortel on Hillary Clinton and Targeting the Unprosecuted Clinton Crime Cartel [VIDEO] #LionelNation #MAGA #KAG2020 @realDonaldTrump @CharlesOrtel #HillaryForPrison #DrainTheSwamp #Midterms2018 #MontanaRally #ClintonCrimeFamily";
-    string tag;
+    string tag, current_line;
 
     open_file(theinputfile, THEFILENAME);
 
-    unsigned int pos = 0;
-    tag = getnexthashtag(test, pos);
-    while (tag != NOHASHTAG) {
-        cout << tag << endl;
-        tag = getnexthashtag(test,pos);
+    while (!theinputfile.eof()) {
+        getline(theinputfile, current_line);
+
+        unsigned int pos = 0;
+        tag = getnexthashtag(current_line, pos);
+        while (tag != NOHASHTAG) {
+            cout << tag << endl;
+            tag = getnexthashtag(current_line,pos);
+        }
     }
 
     return 0;
