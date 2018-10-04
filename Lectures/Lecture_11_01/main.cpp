@@ -7,6 +7,7 @@ using namespace std;
 
 const string NOHASHTAG = "no hashtag";
 const string THEFILENAME = "/Users/Eyjo/Desktop/twitter_maga.txt";
+const int NUM = 10000;
 
 string getnexthashtag(string texti, unsigned int& pos);
 
@@ -15,6 +16,8 @@ void open_file(ifstream &theinputfile, string thefilename);
 int main() {
     ifstream theinputfile;
     string tag, current_line;
+    string hashtags[NUM];
+    int counts[NUM];
 
     open_file(theinputfile, THEFILENAME);
 
