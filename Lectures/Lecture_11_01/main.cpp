@@ -6,6 +6,7 @@
 using namespace std;
 
 const string NOHASHTAG = "no hashtag";
+const string THEFILENAME = "/Users/Eyjo/Desktop/twitter_maga.txt";
 
 string getnexthashtag(string texti, unsigned int& pos);
 
@@ -15,6 +16,8 @@ int main() {
     ifstream theinputfile;
     string test = "Lionel and Charles Ortel on Hillary Clinton and Targeting the Unprosecuted Clinton Crime Cartel [VIDEO] #LionelNation #MAGA #KAG2020 @realDonaldTrump @CharlesOrtel #HillaryForPrison #DrainTheSwamp #Midterms2018 #MontanaRally #ClintonCrimeFamily";
     string tag;
+
+    open_file(theinputfile, THEFILENAME);
 
     unsigned int pos = 0;
     tag = getnexthashtag(test, pos);
@@ -40,7 +43,7 @@ unsigned int hashstart = texti.find("#", pos);
 }
 
 void open_file(ifstream &theinputfile, string thefilename) {
-    theinpufile.open(thefilename.c_str());
+    theinputfile.open(thefilename.c_str());
     if (theinputfile.fail()) {
         cout << "Can't open the file: " << thefilename << endl;
         exit(1);
