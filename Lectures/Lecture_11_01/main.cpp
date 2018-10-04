@@ -43,7 +43,17 @@ int main() {
 
 void insertorupdatehashtags(string hashtags[], int counts[], int& n, string newelement) {
     int index = indexofelement(hashtags, n, newelement);
-
+    if (index >= 0) {
+        counts[index]++;
+    }
+    else if (n < NUM) {
+        hashtags[n] = newelement;
+        counts[n] = 1;
+        n++;
+    }
+    else {
+        cout << "Error: the array is too small!" << endl;
+    }
 }
 
 int indexofelement(string hashtags[], int n, string newelement) {
