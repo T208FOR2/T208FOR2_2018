@@ -10,9 +10,14 @@ string getnexthashtag(string texti, unsigned int& pos);
 
 int main() {
     string test = "Lionel and Charles Ortel on Hillary Clinton and Targeting the Unprosecuted Clinton Crime Cartel [VIDEO] #LionelNation #MAGA #KAG2020 @realDonaldTrump @CharlesOrtel #HillaryForPrison #DrainTheSwamp #Midterms2018 #MontanaRally #ClintonCrimeFamily";
+    string tag;
 
     unsigned int pos = 0;
-    cout << getnexthashtag(test, pos) << endl;
+    tag = getnexthashtag(test, pos);
+    while (tag != NOHASHTAG) {
+        cout << tag << endl;
+        tag = getnexthashtag(test,pos);
+    }
 
     return 0;
 }
